@@ -15,6 +15,7 @@ void delNodeB();
 void delNodeP(int);
 void delNodeE();
 void display();
+void search(int);
 
 void addNodeB()
 {
