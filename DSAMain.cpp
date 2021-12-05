@@ -56,14 +56,15 @@ int main()
 						break;
 					}
 			case 7: display();
-				break;
+					break;
 			case 8: 
 					{
 						int p;
 						printf("Enter the search value\n");
+						scanf("%d",&p);
 						search(p);
 						break;
-					}	
+					}
 			default:printf("Thank You!\n");
 					flag=1;
 		}
