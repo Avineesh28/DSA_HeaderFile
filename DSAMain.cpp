@@ -2,7 +2,7 @@
 int main()
 {
 	int choice;
-	printf("Welcome!\nEnter-\n1\t-\t to Add a Node in the beggining\n2\t-\t to Add a Node in the end\n3\t-\t to Add a Node at a specific position\n4\t-\t to Delete a Node from the beggining \n5\t-\t to Delete a Node from the end \n6-\t-\t to Delete a Node at a specific position\n7-\t-\t to display the list\nOr Any character to exit\n");
+	printf("Welcome!\nEnter-\n1\t-\t to Add a Node in the beggining\n2\t-\t to Add a Node in the end\n3\t-\t to Add a Node at a specific position\n4\t-\t to Delete a Node from the beggining \n5\t-\t to Delete a Node from the end \n6-\t-\t to Delete a Node at a specific position\n7-\t-\t to display the list\n8-\t-\t to search a value in the list\nOr Any character to exit\n");
 	scanf("%d",&choice);
 	int flag=0;
 	while(flag==0)
@@ -56,7 +56,14 @@ int main()
 						break;
 					}
 			case 7: display();
-					break;
+				break;
+			case 8: 
+					{
+						int p;
+						printf("Enter the search value\n");
+						search(p);
+						break;
+					}	
 			default:printf("Thank You!\n");
 					flag=1;
 		}
